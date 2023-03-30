@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
 /* // reset */
 
 /* utility */
@@ -12,6 +15,12 @@
     text-decoration: line-through;
     background-color: rgba(97, 123, 127, 0.3);
 
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 /* // utility */
@@ -24,6 +33,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.logo {
+    width: 20%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
 /* // common rules */
 
 /* specific rules */
@@ -36,6 +50,7 @@ h1 {
 }
 
 ul {
+    padding: 0.5rem;
     border: 1px solid rgb(156, 156, 156);
 }
 

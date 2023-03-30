@@ -25,17 +25,23 @@ createApp({
             newItem: {
                 text: '',
                 done: false
-            }
+            },
+            error: false
         };
     },
 
     methods: {
         addItem() {
-            this.todos.push({ ...this.newItem });
-            this.newItem = {
-                todo: '',
-                completed: false
-            };
+            if (this.newItem.text.trim().length > 0) {
+                this.error = false;
+                this.todos.unshift(this.newItem);
+                this.newItem = {
+                    text: '',
+                    done: false
+                };
+            } else {
+                this.error = true;
+            }
         }
     }
 }).mount("#app");
