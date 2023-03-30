@@ -1,0 +1,50 @@
+/* reset */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* // reset */
+
+/* utility */
+.completed {
+    text-decoration: line-through;
+    background-color: rgba(97, 123, 127, 0.3);
+
+}
+
+/* // utility */
+
+/* common rules */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* // common rules */
+
+/* specific rules */
+h1 {
+    margin-bottom: 5rem;
+}
+
+.input-container {
+    margin-bottom: 2.5rem;
+}
+
+ul {
+    border: 1px solid rgb(156, 156, 156);
+}
+
+li {
+    background-color: rgba(128, 223, 240, 0.3);
+    border-bottom: 1px solid rgb(156, 156, 156);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+/* // specific rules */
