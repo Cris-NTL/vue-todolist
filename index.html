@@ -23,7 +23,7 @@
             <!-- input to add new item -->
             <div class="input-container">
                 <p class="error" v-show="error">Error! This field cannot be empty.</p>
-                <input type="text" placeholder="What you would to do?" v-model.trim="newItem.text"
+                <input class="add" type="text" placeholder="What you would to do?" v-model.trim="newItem.text"
                     @keyup.enter="addItem">
                 <button @click="addItem">Add</button>
             </div>
@@ -33,7 +33,7 @@
                 <li v-for="(item, index) in todos" :class="{ 'completed': item.completed }">
                     <p>{{ item.text }}</p>
                     <span @click="item.completed = !item.completed">
-                        <input type="checkbox">
+                        <button class="done">Done</button>
                     </span>
                 </li>
             </ul>
